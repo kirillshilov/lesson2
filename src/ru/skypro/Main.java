@@ -49,9 +49,7 @@ public class Main {
         float oneDayweightLossTwo = 0.5f;
         float howDayNeedOne =  needWeightLoss / oneDayweightLossOne;
         float howDayNeedTwo = needWeightLoss / oneDayweightLossTwo;
-        float dayDifference = howDayNeedOne - howDayNeedTwo;
-        float dayDifferenceTwo = dayDifference / 2;
-        float dayAverage = howDayNeedTwo + dayDifferenceTwo;
+        float dayAverage = (howDayNeedOne + howDayNeedTwo) / 2;
 
                 System.out.println("Если худеть в день на 250 грамм то потребуется : " + howDayNeedOne + " дней");
                 System.out.println("Если худеть в день на 500 грамм то потребуется : " + howDayNeedTwo + " дней");
@@ -69,9 +67,9 @@ public class Main {
         float mashaZpTwo = 67760 * 1.1f;
         float denisZpTwo = 83690 * 1.1f;
         float kristinaZpTwo = 76230 * 1.1f;
-        float mashaDifference = mashaZpTwo - mashaZp;
-        float denisDifference = denisZpTwo - denisZp;
-        float kristinaDifference = kristinaZpTwo - kristinaZp;
+        float mashaDifference = (mashaZpTwo - mashaZp) * 12;
+        float denisDifference = (denisZpTwo - denisZp) * 12;
+        float kristinaDifference = (kristinaZpTwo - kristinaZp) * 12;
         System.out.println("Маша теперь получает : " + mashaZpTwo + " Годовой доход вырос на : " + mashaDifference);
         System.out.println("Денис теперь получает : " + denisZpTwo + " Годовой доход вырос на : " + denisDifference);
         System.out.println("Кристина теперь получает : " + kristinaZpTwo + " Годовой доход вырос на : " + kristinaDifference);
