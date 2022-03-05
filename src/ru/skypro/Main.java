@@ -4,12 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
 // Задача 1
-              byte a = 1;
-              short  b = 2;
-              int c = 3;
-              long d = 4L;
-              float e = 3.45f;
-              double f = 2.34;
+              byte aaa = 1;
+              short  bbb = 2;
+              int cсс = 3;
+              long ddd = 4L;
+              float eee = 3.45f;
+              double fff = 2.34;
 
 
 
@@ -73,6 +73,40 @@ public class Main {
         System.out.println("Маша теперь получает : " + mashaZpTwo + " Годовой доход вырос на : " + mashaDifference);
         System.out.println("Денис теперь получает : " + denisZpTwo + " Годовой доход вырос на : " + denisDifference);
         System.out.println("Кристина теперь получает : " + kristinaZpTwo + " Годовой доход вырос на : " + kristinaDifference);
+
+
+
+
+        // Задача 6
+
+        int aaaa = 12;
+        int bbbb = 27;
+        int cccc = 44;
+        int dddd = 15;
+        int eeee = 9;
+        int result = aaaa * (bbbb + (cccc - dddd * eeee));
+        System.out.println(result - result - result);
+
+        // Задача 7
+
+
+        int aa = 5;
+        int ba = 7;
+        ba = ba * aa / (aa = (aa * ba) / aa);
+        System.out.println(aa);
+        System.out.println(ba);
+
+
+        // Задача 8
+
+
+        int a = 256;
+        int c = a / 10;
+        int b = c % 10;
+
+        System.out.println(b);
+
+
 
     }
 }
